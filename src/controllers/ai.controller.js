@@ -10,9 +10,9 @@
 //     res.send(response);
 const { generateAI } = require("../services/ai.service");
 
-exports.getResponse = async (req, res) => {
+exports.getReview = async (req, res) => {
   try {
-    const prompt = req.query.prompt;
+    const prompt = req.body.code;
     const result = await generateAI(prompt);
     res.json({ response: result });
   } catch (err) {

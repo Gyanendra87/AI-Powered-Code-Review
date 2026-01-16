@@ -1,0 +1,73 @@
+/* =========================
+   Reset
+   ========================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height chain (IMPORTANT for React) */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* =========================
+   Body
+   ========================= */
+body {
+  background-color: #1e1e1e;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, sans-serif;
+}
+
+/* =========================
+   Editor Layout
+   ========================= */
+.editor {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Panels */
+.left,
+.right {
+  flex: 1;
+  border-radius: 12px;
+}
+
+/* Left Panel */
+.left {
+  background-color: #000;
+  position: relative;
+}
+
+/* Review Button */
+.review-btn {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background-color: rgb(200, 200, 255);
+}
+
+/* Right Panel */
+.right {
+  background-color: #2f2f2f;
+}
